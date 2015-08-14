@@ -75,9 +75,6 @@ public class WordLadders {
 
     while(!queue.isEmpty()){
       MapNode head = queue.remove();
-      if(head == null){
-        break;
-      }
       if(head._word == endWord){
         break;
       }
