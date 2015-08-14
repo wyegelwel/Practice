@@ -73,8 +73,8 @@ public class WordLadders {
     Queue<MapNode> queue = new LinkedList<MapNode>();
     queue.add(startNode);
 
-    while(true){
-      MapNode head = queue.poll();
+    while(!queue.isEmpty()){
+      MapNode head = queue.remove();
       if(head == null){
         break;
       }
